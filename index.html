@@ -348,6 +348,41 @@
             border-top: 1px solid var(--border);
         }
 
+        .powered-by-text {
+            text-align: center;
+            margin-bottom: 15px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .footer-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: nowrap;
+        }
+
+        .footer-image {
+            max-width: 150px;
+            height: auto;
+            max-height: 80px;
+            object-fit: contain;
+        }
+
+        @media (max-width: 768px) {
+            .footer-images {
+                flex-direction: row;
+                gap: 15px;
+            }
+            
+            .footer-image {
+                max-width: 120px;
+                max-height: 60px;
+            }
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
@@ -552,6 +587,15 @@
         </section>
     </main>
 
+    <footer>
+        <div class="container">
+            <p class="powered-by-text">Powered by</p>
+            <div class="footer-images">
+                <img src="./DO_Logo_Horizontal_White.png" alt="Hacktoberfest Logo with Sponsors" class="footer-image" />
+                <img src="./HF-Horizontal-Monochrome-Light.png" alt="Hacktoberfest Horizontal Logo" class="footer-image" />
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Smooth scroll animation for sections
